@@ -14,14 +14,9 @@ Window {
         spacing: 0
 
         // Main menu bar
-        Rectangle
+        MainMenuBar
         {
-            id: mainmenu
-            color: 'grey'
             Layout.fillWidth: true
-            height: 30
-
-            Text {anchors.centerIn: parent; text: "Menu Area: " + parent.width + 'x' + parent.height}
         }
 
         // Everything else but main menu
@@ -30,17 +25,9 @@ Window {
             spacing: 0
 
             // Left navigation bar
-            Rectangle {
-                id: leftbar
-                color: "yellow"
-                width: 30
+            LeftNavigationBar
+            {
                 Layout.fillHeight: true
-
-                Text {
-                    anchors.centerIn: parent
-                    text: "Left Navigation Bar: " + parent.width + 'x' + parent.height
-                    rotation: 270
-                }
             }
 
             // Main area + top/bottom ribbons
@@ -48,32 +35,19 @@ Window {
             {
                 spacing: 0
 
-                Rectangle
+                UpperRibbon
                 {
-                    id: upperribbon
-                    color: 'lightblue'
                     Layout.fillWidth: true
-                    height: 30
-
-                    Text {anchors.centerIn: parent; text: "Upper Ribbon: " + parent.width + 'x' + parent.height}
                 }
 
-                Rectangle {
-                    color: "plum"
+                MainArea {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
-
-                    Text {anchors.centerIn: parent; text: "Main Area: " + parent.width + 'x' + parent.height}
                 }
 
-                Rectangle
+                BottomRibbon
                 {
-                    id: bottomribbon
-                    color: 'lightgreen'
                     Layout.fillWidth: true
-                    height: 30
-
-                    Text {anchors.centerIn: parent; text: "Bottom Ribbon: " + parent.width + 'x' + parent.height}
                 }
             }
         }
