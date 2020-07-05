@@ -13,7 +13,7 @@ Item
     Rectangle
     {
         id: rectangle
-        border.color: "black"
+        border.color: mousearea.containsMouse ? "white" : "black"
         border.width: 1
         anchors.fill: parent
 
@@ -22,7 +22,9 @@ Item
 
     MouseArea
     {
+        id: mousearea
         anchors.fill: parent
+        hoverEnabled: true
         onClicked: container.clicked(container.cellColor)
     }
 }
