@@ -1,2 +1,2 @@
 # QtQuickTest
-Just playing with QtQuick
+Nothing special. Just playing with QtQuick
