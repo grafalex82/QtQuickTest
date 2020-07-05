@@ -6,5 +6,6 @@
         <file>BottomRibbon.qml</file>
         <file>MainArea.qml</file>
         <file>MainMenuBar.qml</file>
+        <file>ColorButton.qml</file>
     </qresource>
 </RCC>
