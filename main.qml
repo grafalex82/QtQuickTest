@@ -7,6 +7,7 @@ Window {
     width: 500
     height: 300
     title: qsTr("Hello World")
+    id: window	
 
     ColumnLayout
     {
